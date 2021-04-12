@@ -9,7 +9,7 @@ HTML_WRAPPER = """<div style="overflow-x: auto; padding: 1rem">{}</div>"""
 st.title("Welcome to Streamlit app")
 
 st.subheader("Named Entity Recognition")
-input_data = st.text_area("Enter Title Here","")
+input_data = st.text_area("Enter Wikipedia Title Here","")
 if st.button("Enter"):
 
     title=wiki.getData(input_data)
